@@ -16,19 +16,19 @@
 	/* header text for headers and certain text */
 	--header-text: hsl(220, 30%, 70%);
 	/* main text color (messages, titles, unread text/indicators) */
-	--primary-text: hsl(220, 15%, 60%);
+	--text-primary: hsl(220, 15%, 60%);
 	/* secondary text color (channels, descriptions, buttons) */
 	--secondary-text: hsl(220, 15%, 40%);
 	/* muted text color (input box placeholders, muted channels, message times) */
-	--muted-text: hsl(220, 15%, 24%);
+	--text-muted: hsl(220, 15%, 24%);
 	--muted-text-hover: hsl(220, 15%, 27%);
 	--muted-text-active: hsl(220, 15%, 30%);
 	/* converted rgb of muted-text (used for message hover backgrounds) */
 	--muted-text-rgb: 52, 58, 70;
 	/* main chat/channel list/member list background */
-	--primary-background: hsl(220, 15%, 10%);
+	--background-primary: hsl(220, 15%, 10%);
 	/* background of pretty much everything else */
-	--secondary-background: hsl(220, 15%, 13%);
+	--background-secondary: hsl(220, 15%, 13%);
 	/* scrollbar thumb color */
 	--scrollbar-color: hsl(220, 15%, 11%);
 }
@@ -62,6 +62,21 @@
 	--primary-dark-660: var(--secondary-background);
 	--primary-dark-700: var(--secondary-background);
 	--primary-dark-800: var(--primary-background);
+	--primary-230: var(--primary-text);
+	--primary-300: var(--secondary-text);
+	--primary-330: var(--muted-text);
+	--primary-345: var(--secondary-text);
+	--primary-360: var(--secondary-text);
+	--primary-400: var(--muted-text-active);
+	--primary-430: var(--muted-text-hover);
+	--primary-500: var(--muted-text);
+	--primary-500-rgb: var(--muted-text-rgb);
+	--primary-560: var(--secondary-background);
+	--primary-600: var(--primary-background);
+	--primary-630: var(--secondary-background);
+	--primary-660: var(--secondary-background);
+	--primary-700: var(--secondary-background);
+	--primary-800: var(--primary-background);
 
 	--header-primary: var(--white-400);
 	--interactive-active: var(--white-400);
@@ -75,7 +90,12 @@
 	--scrollbar-thin-track: none;
 	--scrollbar-auto-track: none;
 	--scrollbar-auto-scrollbar-color-track: none;
-	--status-danger: var(--brand-new-560);
+	--status-danger: var(--info-danger-foreground);
+	
+}
+
+.reactionCount-26U4As /* reaction colors */ {
+	color: var(--primary-300);
 }
 
 /* change colors */
@@ -116,9 +136,7 @@
 .colorDefault-CDqZdO.focused-3qFvc8 /* message menu hover */ {
 	background-color: var(--brand-new-500);
 }
-.numberBadge-37OJ3S /* mention number badge */ {
-	background-color: var(--brand-new-560) !important;
-}
+
 .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub /* selected/hovered server icon */ {
 	background-color: var(--text-muted);
 }
@@ -224,6 +242,10 @@
 .header-11eigE /* emoji panel header */ {
 	box-shadow: none !important;
 }
+.theme-dark
+.form-3gdLxP:before {
+	display:none;
+}
 /*.children-3xh0VB:after  toolbar shadow  {
 	background: none !important;
 }*/
@@ -242,23 +264,6 @@
 .scrollerBase-_bVAAt::-webkit-scrollbar-thumb,
 .scrollerBase-_bVAAt::-webkit-scrollbar-track {
 	visibility: hidden;
-}
-
-/* top corner title */
-.wordmarkWindows-2dq6rw svg {
-	display: none;
-}
-.wordmarkWindows-2dq6rw::after {
-	content: 'Midnight';
-	display: block;
-	position: relative;
-	width: 200px;
-	height: 16px;
-	line-height: 16px;
-	font-family: var(--font-headline);
-	font-size: 11px;
-	font-weight: 600;
-	color: var(--primary-dark-330);
 }
 
 /* window controls */
