@@ -1,3 +1,9 @@
+This is a fork of the midnight discord theme by me to change some things I didn't like about the original, and to fix it, as it is somewhat broken as of 17/02/23.
+
+**Basically all of the work was done by [refact0r](https://github.com/refact0r/).** The original description follows.
+
+---
+
 <img width=700 src="https://user-images.githubusercontent.com/34758569/209453714-d26e6662-7579-4e16-ab1c-b1e1e377be28.png">
 
 # midnight
