@@ -1,4 +1,4 @@
-This is a fork of the midnight discord theme by me to change some things I didn't like about the original, and to fix it, as it is somewhat broken as of 17/02/23.
+This is a fork of the midnight discord theme by me to change some things I didn't like about the original.
 
 **Basically all of the work was done by [refact0r](https://github.com/refact0r/).** The original description follows.
 
