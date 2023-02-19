@@ -58,21 +58,7 @@
 	--brand-new-500: var(--accent-color);
 	--brand-new-560: var(--accent-color-2);
 	--brand-new-600: var(--accent-color-3);
-	--primary-dark-200: var(--primary-text);
-	--primary-dark-300: var(--secondary-text);
-	--primary-dark-330: var(--muted-text);
-	--primary-dark-345: var(--secondary-text);
-	--primary-dark-360: var(--secondary-text);
-	--primary-dark-400: var(--muted-text-active);
-	--primary-dark-430: var(--muted-text-hover);
-	--primary-dark-500: var(--muted-text);
-	--primary-dark-500-rgb: var(--muted-text-rgb);
-	--primary-dark-560: var(--secondary-background);
-	--primary-dark-600: var(--primary-background);
-	--primary-dark-630: var(--secondary-background);
-	--primary-dark-660: var(--secondary-background);
-	--primary-dark-700: var(--secondary-background);
-	--primary-dark-800: var(--primary-background);
+	--primary-200: var(--primary-text);
 	--primary-230: var(--primary-text);
 	--primary-300: var(--secondary-text);
 	--primary-330: var(--muted-text);
@@ -92,10 +78,10 @@
 	--header-primary: var(--white-400);
 	--interactive-active: var(--white-400);
 	--logo-primary: var(--white-400);
-	--background-modifier-hover: rgba(var(--primary-dark-500-rgb), 0.1);
-	--background-modifier-active: rgba(var(--primary-dark-500-rgb), 0.2);
-	--background-modifier-selected: rgba(var(--primary-dark-500-rgb), 0.3);
-	--background-modifier-accent: rgba(var(--primary-dark-500-rgb), 0.2);
+	--background-modifier-hover: rgba(var(--primary-500-rgb), 0.1);
+	--background-modifier-active: rgba(var(--primary-500-rgb), 0.2);
+	--background-modifier-selected: rgba(var(--primary-500-rgb), 0.3);
+	--background-modifier-accent: rgba(var(--primary-500-rgb), 0.2);
 	--background-mentioned: rgba(var(--brand-500-rgb), 0.1);
 	--background-mentioned-hover: rgba(var(--brand-500-rgb), 0.08);
 	--scrollbar-thin-track: none;
@@ -123,13 +109,13 @@
 .expandedFolderBackground-1kSAf6, /* folder expanded */
 .callContainer-HtHELf, /* voice channel background */
 .theme-dark .container-1zzFcN /* vc panel background */ {
-	background-color: var(--primary-dark-600);
+	background-color: var(--primary-600);
 }
 .folderIconWrapper-1oRIZr /* folder closed */ {
-	background-color: var(--primary-dark-600) !important;
+	background-color: var(--primary-600) !important;
 }
 .searchResult-O9NDji {
-	background-color: var(--primary-dark-630);
+	background-color: var(--primary-630);
 }
 .container-2o3qEW, /* members list background (servers only) */
 .members-3WRCEx, /* members list foreground */  
@@ -146,10 +132,6 @@
 .mentioned-Tre-dv:before, /* mention message left bar */
 .colorDefault-CDqZdO.focused-3qFvc8 /* message menu hover */ {
 	background-color: var(--brand-new-500);
-}
-
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub /* selected/hovered server icon */ {
-	background-color: var(--text-muted);
 }
 
 /* add rounded corners */
@@ -178,7 +160,7 @@
 	background: none !important;
 }
 .chatContent-3KubbW {
-	background-color: var(--primary-dark-600) !important;
+	background-color: var(--primary-600) !important;
 }
 
 /* remove chat header background */
@@ -193,7 +175,7 @@
 	content: '';
 	position: absolute;
 	margin-top: -48px;
-	background-color: var(--primary-dark-600);
+	background-color: var(--primary-600);
 	width: 100%;
 	height: 48px;
 }
