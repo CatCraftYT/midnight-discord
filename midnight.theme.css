@@ -11,9 +11,9 @@
 
 :root {
 	/* amount of spacing and padding */
-	--spacing: 12px;
+	--spacing: 6px;
 	/* radius of round corners */
-	--roundness: 16px;
+	--roundness: 8px;
 
 	/* color of links */
 	--accent-1: hsl(190, 70%, 60%);
