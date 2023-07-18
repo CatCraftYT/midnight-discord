@@ -3,21 +3,20 @@
  * @description A darkened discord theme.
  * @author refact0r
  * @version 1.5.0
- * @source https://github.com/refact0r/midnight-discord
- * @authorId 508863359777505290
+ * @source https://github.com/CatCraftYT/midnight-discord
 */
 
 /* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!! */
 
 :root {
 	/* amount of spacing and padding */
-	--spacing: 6px;
+	--spacing: 8px;
 	/* radius of round corners */
-	--roundness: 8px;
+	--roundness: 12px;
 
 	/* color of links */
 	--accent-1: hsl(190, 70%, 60%);
-	/* color of unread dividers and some indicators */
+	/* color of some indicators */
 	--accent-2: hsl(190, 70%, 50%);
 	/* color of accented buttons */
 	--accent-3: hsl(190, 70%, 40%);
@@ -40,7 +39,7 @@
 	/* color of icon buttons and channels */
 	--text-4: hsl(220, 15%, 40%);
 	/* color of muted channels/chats and timestamps */
-	--text-5: hsl(220, 15%, 24%);
+	--text-5: hsl(220, 15%, 40%);
 
 	/* color of dark buttons when clicked */
 	--bg-1: hsl(220, 15%, 20%);
@@ -57,6 +56,12 @@
 	--active: hsla(220, 20%, 40%, 0.2);
 	/* color of messages when hovered */
 	--message-hover: hsla(220, 0%, 0%, 0.1);
+}
+
+/* translucent floating menus */
+.menu-2TXYjN {
+    backdrop-filter: blur(3px);
+    background: hsl(220 15% 10% / 0.8) !important;
 }
 
 /* fix colors */
@@ -78,9 +83,8 @@
 .clickable-vvKY2q .header-3OsQeK:hover, .selected-1GtAC5 .header-3OsQeK /* server name hover */ {
 	background: var(--message-hover);
 }
-.divider-2rZFJK /* unread dividers */ {
-	--divider-color: var(--accent-2);
-}
+
+
 .iconBadge-3Mmg92 /* dm button */ {
 	background: var(--accent-2) !important;
 }
@@ -252,23 +256,6 @@
 .auto-2TJ1RH::-webkit-scrollbar-thumb,
 .auto-2TJ1RH::-webkit-scrollbar-track {
 	visibility: hidden;
-}
-
-/* top corner title */
-.wordmarkWindows-2dq6rw svg {
-	display: none;
-}
-.wordmarkWindows-2dq6rw::after {
-	content: 'Midnight';
-	display: block;
-	position: relative;
-	width: 200px;
-	height: 16px;
-	line-height: 16px;
-	font-family: var(--font-headline);
-	font-size: 11px;
-	font-weight: 600;
-	color: var(--text-5);
 }
 
 /* window controls */
@@ -578,7 +565,7 @@
 	--primary-660: var(--bg-4);
 	--primary-700: var(--bg-3);
 	--primary-730: var(--bg-3);
-	--primary-800: var(--bg-3);
+	--primary-800: var(--bg-4);
 
 	--search-popout-option-fade: none;
 	--search-popout-option-fade-hover: none;
