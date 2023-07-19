@@ -59,15 +59,19 @@
 }
 
 /* translucent floating menus */
-.menu-2TXYjN {
+.menu-2TXYjN,
+.userProfileOuterUnthemed-11rPfA {
     backdrop-filter: blur(3px);
+    /* this should always be background-floating, but for some reason putting it in makes the background fully transparent */
     background: hsl(220 15% 10% / 0.8) !important;
+}
+.overlayBackground-2aa7wt {
+    background: hsl(220 15% 8% / 0.6) !important;
 }
 
 /* fix colors */
 .mentioned-Tre-dv:before /* mention message left edge */,
-.container-1QtPKm.checked-16gMAN /* settings checkbuttons */,
-.numberBadge-37OJ3S /* dm unread number */ {
+.container-1QtPKm.checked-16gMAN /* settings checkbuttons */ {
 	background: var(--accent-3) !important;
 }
 .expandedFolderIconWrapper-3RwQpD svg /* folder icons */,
