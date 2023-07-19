@@ -59,14 +59,17 @@
 }
 
 /* translucent floating menus */
-.menu-2TXYjN,
-.userProfileOuterUnthemed-11rPfA {
+.menu-2TXYjN /* right-click menus */,
+.userProfileInnerThemedNonPremium-2AJg-H /* profile popouts */ {
     backdrop-filter: blur(3px);
-    /* this should always be background-floating, but for some reason putting it in makes the background fully transparent */
-    background: hsl(220 15% 10% / 0.8) !important;
+    /* this should always be background-floating (bg-4), but it is in hsl not triplet value */
+    background: hsl(220 15% 10% / 0.85) !important;
 }
-.overlayBackground-2aa7wt {
+.overlayBackground-2aa7wt /* inner part of profile popouts */ {
     background: hsl(220 15% 8% / 0.6) !important;
+}
+.userProfileOuterUnthemed-11rPfA /* redundant background part of profile popouts */ {
+    background: none;
 }
 
 /* fix colors */
