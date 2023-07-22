@@ -49,6 +49,10 @@
 	--bg-3: hsl(220, 15%, 13%);
 	/* main background color */
 	--bg-4: hsl(220, 15%, 10%);
+    /* color of popout menus like right-clicking messages */
+    --popout-bg: hsl(220 15% 10% / 0.8);
+    /* color of the inner part of unthemed profile popouts */
+    --profile-inner: hsl(220 15% 8% / 0.6);
 
 	/* color of channels and icon buttons when hovered */
 	--hover: hsla(230, 20%, 40%, 0.1);
@@ -59,16 +63,24 @@
 }
 
 /* translucent floating menus */
-.menu-2TXYjN /* right-click menus */,
 .userProfileInnerThemedNonPremium-2AJg-H /* profile popouts */ {
     backdrop-filter: blur(3px);
-    /* this should always be background-floating (bg-4), but it is in hsl not triplet value */
-    background: hsl(220 15% 10% / 0.85) !important;
+    background: var(--popout-bg) !important;
+}
+/* use before element to prevent submenus like reactions becoming positioned incorrectly https://stackoverflow.com/q/52937708 */
+.menu-2TXYjN::before /* right-click menus */ {
+    content: "";
+    backdrop-filter: blur(3px);
+    background: var(--popout-bg) !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 .overlayBackground-2aa7wt /* inner part of profile popouts */ {
-    background: hsl(220 15% 8% / 0.6) !important;
+    background: var(--profile-inner) !important;
 }
-.userProfileOuterUnthemed-11rPfA /* redundant background part of profile popouts */ {
+.userProfileOuterUnthemed-11rPfA /* redundant background part of profile popouts */,
+.menu-2TXYjN {
     background: none;
 }
 
