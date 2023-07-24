@@ -39,7 +39,7 @@
 	/* color of icon buttons and channels */
 	--text-4: hsl(220, 15%, 40%);
 	/* color of muted channels/chats and timestamps */
-	--text-5: hsl(220, 15%, 25%);
+	--text-5: hsl(220, 15%, 30%);
 
 	/* color of dark buttons when clicked */
 	--bg-1: hsl(220, 15%, 20%);
@@ -51,8 +51,12 @@
 	--bg-4: hsl(220, 15%, 10%);
     /* color of popout menus like right-clicking messages */
     --popout-bg: hsl(220 15% 10% / 0.8);
+    /* color of message search box */
+    --popout-bg-2: hsl(220 15% 10% / 0.9);
     /* color of the inner part of unthemed profile popouts */
-    --profile-inner: hsl(220 15% 8% / 0.6);
+    --popout-bg-3: hsl(220 15% 8% / 0.6);
+    /* transparent highlight for headers */
+    --popout-bg-4: hsl(220 15% 13% / 0.5);
 
 	/* color of channels and icon buttons when hovered */
 	--hover: hsla(230, 20%, 40%, 0.1);
@@ -63,9 +67,22 @@
 }
 
 /* translucent floating menus */
-.userProfileInnerThemedNonPremium-2AJg-H /* profile popouts */ {
+.userProfileInnerThemedNonPremium-2AJg-H /* profile popouts */,
+.messagesPopoutWrap-3zryHW /* pinned messages */,
+.popoutContainer-2wbmiM /* emoji origin popout */,
+.contentWrapper-3vHNP2 /* emoji picker */ {
     backdrop-filter: blur(3px);
     background: var(--popout-bg) !important;
+}
+.container-2McqkF /* message search box */,
+.container-18GwIk /* threads popout */ {
+    backdrop-filter: blur(3px);
+    background: var(--popout-bg-2) !important;
+}
+.queryContainer-ZunrLZ /* message search box header */,
+.header-1w9Q93 /* pinned messages & inbox header */,
+.header-3_zmOb /* threads popout header */ {
+    background: var(--popout-bg-4);
 }
 /* use before element to prevent submenus like reactions becoming positioned incorrectly https://stackoverflow.com/q/52937708 */
 .menu-2TXYjN::before /* right-click menus */ {
@@ -77,21 +94,24 @@
     position: absolute;
 }
 .overlayBackground-2aa7wt /* inner part of profile popouts */ {
-    background: var(--profile-inner) !important;
+    background: var(--popout-bg-3) !important;
 }
 .userProfileOuterUnthemed-11rPfA /* redundant background part of profile popouts */,
-.menu-2TXYjN {
+.menu-2TXYjN /* original menu background */,
+.guildSection-2Zyzy8 /* seemingly redundant bottom half of emoji origin popout */,
+.wrapper-1NNaWG /* emoji picker headers */,
+.wrapper-22rqw6 /* emoji picker server list */,
+.categoryItemDefaultCategorySelected-2YeRUu {
     background: none;
+}
+.guildSection-2Zyzy8 {
+    padding-top: 0px;
 }
 
 /* fix colors */
 .mentioned-Tre-dv:before /* mention message left edge */,
 .container-1QtPKm.checked-16gMAN /* settings checkbuttons */ {
 	background: var(--accent-3) !important;
-}
-.numberBadge-37OJ3S /* dm unread number */ {
-	background: var(--accent-2) !important;
-	/* color: var(--bg-4); */
 }
 .expandedFolderIconWrapper-3RwQpD svg /* folder icons */,
 .strikethrough-2Kl6HF /* mute button strikethrough */ {
@@ -106,8 +126,6 @@
 .clickable-vvKY2q .header-3OsQeK:hover, .selected-1GtAC5 .header-3OsQeK /* server name hover */ {
 	background: var(--message-hover);
 }
-
-
 .iconBadge-3Mmg92 /* dm button */ {
 	background: var(--accent-2) !important;
 }
@@ -115,7 +133,6 @@
 .theme-dark .header-3xB4vB /* browse channels header */,
 .theme-dark .container-1um7CU /* browse channels body */,
 .searchHeader-1r_ZSh /* search results number box */,
-.wrapper-22rqw6 /* emoji selector server list */,
 .chat-2ZfjoI.container-2YMsb4 /* message requests */ {
 	background-color: var(--bg-4);
 }
@@ -131,7 +148,6 @@
 .hoverButtonGroup-2yZIzC /* download button on embeds */,
 .messageContainer-3VTXBC /* inbox messages */,
 .channelRow-4X_3fi /* browse channels channels */,
-.container-18GwIk /* channel threads dropdown */
 .reaction-3vwAF2 /* reactions */,
 .vc-plugins-card /* vencord plugins card */ {
 	background: var(--bg-3);
