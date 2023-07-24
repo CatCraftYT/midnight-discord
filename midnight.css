@@ -70,14 +70,11 @@
 .userProfileInnerThemedNonPremium-2AJg-H /* profile popouts */,
 .messagesPopoutWrap-3zryHW /* pinned messages */,
 .popoutContainer-2wbmiM /* emoji origin popout */,
-.contentWrapper-3vHNP2 /* emoji picker */ {
-    backdrop-filter: blur(3px);
-    background: var(--popout-bg) !important;
-}
+.contentWrapper-3vHNP2 /* emoji picker */,
 .container-2McqkF /* message search box */,
 .container-18GwIk /* threads popout */ {
     backdrop-filter: blur(3px);
-    background: var(--popout-bg-2) !important;
+    background: var(--popout-bg) !important;
 }
 .queryContainer-ZunrLZ /* message search box header */,
 .header-1w9Q93 /* pinned messages & inbox header */,
@@ -93,7 +90,8 @@
     height: 100%;
     position: absolute;
 }
-.overlayBackground-2aa7wt /* inner part of profile popouts */ {
+.overlayBackground-2aa7wt /* inner part of profile popouts */,
+.messageGroupWrapper-1jf_7C /* pinned messages */ {
     background: var(--popout-bg-3) !important;
 }
 .userProfileOuterUnthemed-11rPfA /* redundant background part of profile popouts */,
