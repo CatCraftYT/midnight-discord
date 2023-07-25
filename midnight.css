@@ -71,6 +71,7 @@
 .messagesPopoutWrap-3zryHW /* pinned messages */,
 .popoutContainer-2wbmiM /* emoji origin popout */,
 .contentWrapper-3vHNP2 /* emoji picker */,
+.contentWrapper-2f9yME /* reaction emoji picker */,
 .container-2McqkF /* message search box */,
 .container-18GwIk /* threads popout */ {
     backdrop-filter: blur(3px);
@@ -96,13 +97,14 @@
 }
 .userProfileOuterUnthemed-11rPfA /* redundant background part of profile popouts */,
 .menu-2TXYjN /* original menu background */,
-.guildSection-2Zyzy8 /* seemingly redundant bottom half of emoji origin popout */,
+.guildSection-2Zyzy8 /* seemingly redundant bottom half of emoji guild popout */,
 .wrapper-1NNaWG /* emoji picker headers */,
 .wrapper-22rqw6 /* emoji picker server list */,
+.inspector-DFKXwB /* emoji picker footer */,
 .categoryItemDefaultCategorySelected-2YeRUu {
     background: none;
 }
-.guildSection-2Zyzy8 {
+.guildSection-2Zyzy8 /* make emoji guild popout smaller */ {
     padding-top: 0px;
 }
 
