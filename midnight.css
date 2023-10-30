@@ -140,12 +140,6 @@
 .container__871ba /* settings checkbuttons default */ {
 	background: var(--bg-1) !important;
 }
-.container_ca50b9 /* user panel button strikethroughs */,
-.divider_b9338f /* unread divider */,
-.numberBadge__50328 /* unread number badge */,
-.toolbar__88c63 /* toolbar button strikethroughs */ {
-	--status-danger: var(--accent-2);
-}
 .message__80c10.mentioned__58017:before /* mention message left edge */,
 .container__871ba.checked__6bdb0 /* settings checkbuttons */ {
 	background: var(--accent-3) !important;
