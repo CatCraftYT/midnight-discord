@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a fork of the [midnight discord theme](https://github.com/refact0r/midnight-discord) that makes some small personal changes.
 
 **The actual css work was done by [refact0r](https://github.com/refact0r/).** The original description follows.
@@ -6,8 +5,6 @@ This is a fork of the [midnight discord theme](https://github.com/refact0r/midni
 ---
 
 <img width=700 src="https://user-images.githubusercontent.com/34758569/209453714-d26e6662-7579-4e16-ab1c-b1e1e377be28.png">
-=======
-<img width=800 src="https://github.com/refact0r/midnight-discord/assets/34758569/b831a8a7-1e7f-4114-9420-cbbb8e8f184f">
 >>>>>>> upstream/master
 
 # midnight
