@@ -1,6 +1,10 @@
-This is a fork of the [midnight discord theme](https://github.com/refact0r/midnight-discord) that makes some small personal changes.
+This is a fork of the [midnight discord theme](https://github.com/refact0r/midnight-discord) that makes some small personal style changes:
+- Reverting some colors back to discord defaults (mic strikethrough, status)
+- Translucent (glass) menus
 
-**The actual css work was done by [refact0r](https://github.com/refact0r/).** The original description follows.
+The theme works by default with Vencord by pasting [this link](https://raw.githubusercontent.com/CatCraftYT/midnight-discord/master/midnight.theme.css) into the online themes. To use with BetterDiscord, copy the content of `midnight.css` to the end of `midnight.theme.css` and remove line 12, then install `midnight.theme.css` as usual.
+
+**Almost all actual css work was done by the original creator, [refact0r](https://github.com/refact0r/).** The original description follows.
 
 ---
 
