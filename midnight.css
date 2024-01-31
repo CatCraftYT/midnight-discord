@@ -1,5 +1,4 @@
 /* translucent floating menus */
-.userProfileInnerThemedNonPremium__3d0a6 /* profile popouts */,
 .messagesPopoutWrap_b3b384 /* pinned messages */,
 .popoutContainer_7b9a3 /* emoji origin popout */,
 .contentWrapper__321ed /* emoji picker */,
@@ -19,7 +18,9 @@
     background: var(--popout-bg-4);
 }
 /* use before element to prevent submenus like reactions becoming positioned incorrectly https://stackoverflow.com/q/52937708 */
-.menu_dc52c6::before /* right-click menus */ {
+.menu_dc52c6:not(#account)::before /* right-click menus */,
+.userProfileInnerThemedNonPremium__3d0a6::before /* profile popout, need to do this so status and acc switcher are correctly positioned */,
+{
     content: "";
     backdrop-filter: blur(3px);
     background: var(--popout-bg) !important;
@@ -32,6 +33,7 @@
     background: var(--popout-bg-3) !important;
 }
 .userProfileOuterUnthemed__48723 /* redundant background part of profile popouts */,
+.userProfileInnerThemedNonPremium__3d0a6 /* original profile popout bg */,
 .menu_dc52c6 /* original right-click menu background */,
 .guildSection_ebda04 /* seemingly redundant bottom half of emoji guild popout */,
 .wrapper__7a35f /* emoji picker headers */,
