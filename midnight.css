@@ -19,7 +19,7 @@
 }
 /* use before element to prevent submenus like reactions becoming positioned incorrectly https://stackoverflow.com/q/52937708 */
 .menu_dc52c6:not(#account)::before /* right-click menus */,
-.userProfileInnerThemedNonPremium__3d0a6::before /* profile popout, need to do this so status and acc switcher are correctly positioned */,
+.userProfileInnerThemedNonPremium__3d0a6::before /* profile popout, need to do this so status and acc switcher are correctly positioned */
 {
     content: "";
     backdrop-filter: blur(3px);
