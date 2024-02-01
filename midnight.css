@@ -1,8 +1,8 @@
 /* translucent floating menus */
 .messagesPopoutWrap_b3b384 /* pinned messages */,
-.popoutContainer_7b9a3 /* emoji origin popout */,
-.contentWrapper__321ed /* emoji picker */,
-.contentWrapper_eab878 /* reaction emoji picker */,
+.popoutContainer__7b9a3 /* emoji origin popout */,
+.emojiPicker_b65ce9 /* emoji picker */,
+#emoji-picker-tab-panel>.header__55964 /* reaction emoji picker header */,
 .container_d6dad3 /* message search box */,
 .container__8261a /* threads popout */,
 .popout__24e32 /* discussion/threads channel hover */,
@@ -34,9 +34,10 @@
 }
 .userProfileOuterUnthemed__48723 /* redundant background part of profile popouts */,
 .userProfileInnerThemedNonPremium__3d0a6 /* original profile popout bg */,
+.contentWrapper__321ed /* redundant bg of emoji picker */,
+.wrapper__7a35f /* emoji picker headers */,
 .menu_dc52c6 /* original right-click menu background */,
 .guildSection_ebda04 /* seemingly redundant bottom half of emoji guild popout */,
-.wrapper__7a35f /* emoji picker headers */,
 .wrapper_cd625e /* emoji picker server list */,
 .inspector__993e1 /* emoji picker footer */,
 .categoryItemDefaultCategorySelected__8245a /* background of selected emoji category */ {
@@ -1014,3 +1015,4 @@ html.theme-light,
 
 	--white-500: var(--text-1);
 }
+
