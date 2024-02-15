@@ -7,7 +7,7 @@
 .container_d6dad3 /* message search box */,
 .container__8261a /* threads popout */,
 .popout__24e32 /* discussion/threads channel hover */,
-.root_a28985 /* focused popups (like channel info popup) */ {
+.root_a28985:not(.carouselModal_c0d5b7) /* focused popups (like channel info popup) but not image popups */ {
 	backdrop-filter: blur(3px);
 	background: var(--popout-bg) !important;
 }
