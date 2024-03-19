@@ -10,6 +10,7 @@
 .streamPreview__1846c /* stream preview popout background */,
 .container__03857 /* vc hover summary */,
 .scroller_abc422 /* stream spectators list */,
+.container__0810b /* vc stats popout */,
 .root_a28985:not(.carouselModal_c0d5b7) /* focused popups (like channel info popup) but not image popups */ {
 	backdrop-filter: blur(3px);
 	background: var(--popout-bg) !important;
