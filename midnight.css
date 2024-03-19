@@ -9,6 +9,7 @@
 .popout__24e32 /* discussion/threads channel hover */,
 .streamPreview__1846c /* stream preview popout background */,
 .container__03857 /* vc hover summary */,
+.scroller_abc422 /* stream spectators list */,
 .root_a28985:not(.carouselModal_c0d5b7) /* focused popups (like channel info popup) but not image popups */ {
 	backdrop-filter: blur(3px);
 	background: var(--popout-bg) !important;
@@ -56,6 +57,8 @@
 .guildSection_ebda04 /* make emoji guild popout smaller */ {
 	padding-top: 0px;
 }
+
+/* end of translucency changes */
 
 /* reduced motion */
 :root.reduce-motion {
