@@ -70,7 +70,7 @@
         /* color of the inner part of unthemed profile popouts */
         --popout-bg-3: hsl(220 15% 8% / 0.6);
         /* transparent highlight for headers */
-        --popout-bg-4: hsl(220 15% 13% / 0.5);
+        --popout-bg-4: hsl(220 15% 12% / 0.5);
 
         /* filter uncolorable elements to fit theme */
         /* (just set to none, they're too much work to configure) */
