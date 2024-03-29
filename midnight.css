@@ -8,9 +8,9 @@
 .container_f93da8 /* threads popout */,
 .popout__24e32 /* discussion/threads channel hover */,
 .streamPreview__965fa /* stream preview popout background */,
-/*.container__03857 /* vc hover summary (needs to be fixed), */
-/*.scroller_abc422 /* stream spectators list (needs to be fixed), */
-.container__0810b /* vc stats popout (needs to be fixed) */,
+.container__628c8 /* vc hover summary */,
+.scroller__13d83 /* stream spectators list */,
+.container__13b2a /* vc stats popout */,
 .root_a28985:not(.carouselModal__7e22f) /* focused popups (like channel info popup) but not image popups */ {
         backdrop-filter: blur(3px);
         background: var(--popout-bg) !important;
