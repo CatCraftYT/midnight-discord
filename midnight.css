@@ -134,11 +134,6 @@ div.message_ccca67.replying__38514::before /* change reply message bar to neutra
 .activeButtonChild__58171 /* send button */ {
 	color: var(--accent-2);
 }
-.container_debb33 /* user panel button strikethroughs */,
-.numberBadge_c1210c  /* unread number badge */,
-.toolbar__62fb5 /* toolbar button strikethroughs */ {
-	--status-danger: var(--accent-2);
-}
 .expandedFolderIconWrapper__324c1 > svg[style="color: rgb(88, 101, 242);"] /* default color folder icons */ {
 	color: var(--accent-3) !important;
 }
