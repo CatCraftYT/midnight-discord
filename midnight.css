@@ -23,6 +23,8 @@
 .channelHeader_ea0f89 /* inbox channel header */,
 .footer__6b9ef /* pinned messages footer */,
 .header__6d44a /* threads menu header */,
+.profileBadges__1f2ab /* profile badges background */,
+.note_ba0c31 textarea:focus /* profile notes focused */,
 .container__0998c /* server activity hover inner */ {
         background: var(--popout-bg-3);
 }
