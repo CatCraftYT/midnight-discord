@@ -137,7 +137,7 @@ div.message_d5deea.replying_d5deea::before /* change reply message bar to neutra
 .activeButtonChild_a06035 /* send button */ {
 	color: var(--accent-2);
 }
-.expandedFolderIconWrapper__324c1 > svg[style="color: rgb(88, 101, 242);"] /* default color folder icons */ {
+.expandedFolderIconWrapper_bc7085 > svg[style="color: rgb(88, 101, 242);"] /* default color folder icons */ {
 	color: var(--accent-3) !important;
 }
 .divider_fc5f50 /* unread divider */,
