@@ -1,36 +1,35 @@
 /* translucent floating menus */
-.messagesPopoutWrap__10dd1 /* pinned messages */,
-.popoutContainer__66068 /* emoji origin popout */,
-.contentWrapper_e0bb2c /* chatbox emoji picker */,
+.messagesPopoutWrap_ac90a2 /* pinned messages */,
+.popoutContainer_cf58b5 /* emoji origin popout */,
+.contentWrapper_af5dbb /* chatbox emoji picker */,
 #emoji-picker-tab-panel[role="dialog"] /* reaction emoji picker */,
-.reactionTooltip__20d0b /* reaction emoji hover */,
-.container__84c26 /* message search box */,
-.container_f93da8 /* threads popout */,
-.popout__24e32 /* discussion/threads channel hover */,
-.streamPreview__965fa /* stream preview popout background */,
-.container__628c8 /* vc hover summary */,
-.scroller__13d83 /* stream spectators list */,
-.container__13b2a /* vc stats popout */,
-.container_a88e31 /* server activity hover */,
-.tooltipPrimary__51b23 /* server info/emoji hover */,
-.root_a28985:not(.carouselModal__7e22f) /* focused popups (like channel info popup) but not image popups */ {
-        backdrop-filter: blur(5px);
+.reactionTooltip_fba897 /* reaction emoji hover */,
+.container_eedf95 /* message search box */,
+.container_f1c3d9 /* threads chat menu 'unreads' */,
+.container_f8a938 /* threads chat menu 'for you' */,
+.popout_c5b389 /* discussion/threads channel popout */,
+.streamPreview_adbea6 /* stream preview popout background */,
+.container_e88961 /* vc hover summary */,
+.scroller__13d83 /* stream spectators list - NEEDS FIX */,
+.debugPanelStandalone_feab95 /* vc ping stats popout */,
+.container_be6a5c /* server activity hover */,
+.tooltipPrimary_b6c360 /* emoji/folder hover */,
+.root_f9a4c9:not(.carouselModal_d2b9a1) /* focused popups (like channel info popup) but not image popups */ {
+        backdrop-filter: blur(3px);
         background: var(--popout-bg) !important;
 }
-.queryContainer_c359fe /* message search box header */,
-.header__21b33 /* pinned messages header */,
-.header__58a85 /* inbox header */,
-.channelHeader_ea0f89 /* inbox channel header */,
-.footer__6b9ef /* pinned messages footer */,
-.header__6d44a /* threads menu header */,
-.profileBadges__1f2ab /* profile badges background */,
-.note_ba0c31 textarea:focus /* profile notes focused */,
-.container__0998c /* server activity hover inner */ {
+.header_b0286e /* message search box header */,
+.header_ac90a2 /* pinned messages/inbox header */,
+.channelHeader_f3978e /* inbox channel header */,
+.header_e664f3 /* threads menu header */,
+.footer_ac90a2 /* pinned messages footer */,
+.profileBadges_f89da9 /* profile badges background */, 
+.note_c90ad7 textarea:focus /* profile notes focused */ {
         background: var(--popout-bg-3);
 }
 /* use before element to prevent submenus like reactions becoming positioned incorrectly https://stackoverflow.com/q/52937708 */
-.menu__088f7:not(#account)::before /* right-click menus */,
-.userProfileInnerThemedNonPremium_b64fb4::before /* profile popout, need to do this so status and acc switcher are correctly positioned */
+.menu_d90b3d:not(#account)::before /* right-click menus but not status switcher */,
+.userProfileInnerThemedNonPremium_c69a7b::before /* profile popout, need to do this so status and acc switcher are correctly positioned */
 {
         content: "";
         backdrop-filter: blur(5px);
@@ -39,29 +38,31 @@
         height: 100%;
         position: absolute;
 }
-.overlayBackground__345c9 /* inner part of profile popouts */,
-.messageGroupWrapper__1fce2 /* pinned messages */ {
+.overlayBackground_c69a7b /* inner part of profile popouts */,
+.container_cfbfb9 /* server activity hover inner */,
+.messageGroupWrapper_ac90a2 /* pinned messages */ {
         background: var(--popout-bg-2) !important;
 }
-.userProfileOuterUnthemed__9741c /* redundant background part of profile popouts */,
-.userProfileInnerThemedNonPremium_b64fb4 /* original profile popout bg */,
-.emojiPicker__5e2e2 /* redundant bg of reaction emoji picker */,
-#emoji-picker-tab-panel>.header_e5d8b2 /* reaction emoji picker header */,
-.wrapper__91b2c /* emoji picker headers */,
-.menu__088f7 /* original right-click menu background */,
-.guildSection__15ac6 /* seemingly redundant bottom half of emoji guild popout */,
-.wrapper__45980 /* emoji picker server list */,
-.inspector__80c84 /* emoji picker footer */,
-.categoryItemDefaultCategorySelected__7d6e0 /* background of selected emoji category */ {
+.userProfileOuterUnthemed_c69a7b /* redundant background part of profile popouts */,
+.userProfileInnerThemedNonPremium_c69a7b /* original profile popout bg */,
+.emojiPicker_c6ee36 /* redundant bg of reaction emoji picker */,
+#emoji-picker-tab-panel>.header_c6ee36 /* reaction emoji picker header */,
+.wrapper_e06857 /* emoji picker headers */,
+.menu_d90b3d /* original right-click menu background */,
+.guildSection_e58351 /* seemingly redundant bottom half of emoji guild popout */,
+.wrapper_ba23fe /* emoji picker server list */,
+.inspector_c3120f /* emoji picker footer */,
+.header_b56bbc /* gif search bar bg */,
+.categoryItemDefaultCategorySelected_dfa278 /* background of selected emoji category */ {
         background: none;
 }
-.emojiPicker__5e2e2 /* remove inner box shadow around reaction emoji picker selection */ {
+.emojiPicker_c6ee36 /* remove inner box shadow around reaction emoji picker selection */ {
         box-shadow: none !important;
 }
 #emoji-picker-tab-panel[role="dialog"] /* add box shadow around entire reaction emoji picker */ {
         box-shadow: var(--elevation-stroke),var(--elevation-high);
 }
-.guildSection__15ac6 /* make emoji guild popout smaller */ {
+.guildSection_e58351 /* make emoji guild popout smaller */ {
         padding-top: 0px;
 }
 
@@ -638,26 +639,7 @@ button.button_dd4f85 /* small buttons */,
 	background-color: var(--idle-indicator) !important;
 }
 
-<<<<<<< HEAD
 .wrapper_a6f950:hover .childWrapper__760c6::before {
-=======
-/* custom dm button moon icon */
-.childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
-	display: var(--discord-icon);
-}
-.childWrapper_f90abb:has(> svg:not(.favoriteIcon_dcc7a4))::before {
-	content: '';
-	display: var(--moon-icon);
-	position: absolute;
-	width: 65%;
-	height: 65%;
-	background: var(--text-4);
-	-webkit-mask-image: var(--moon-icon-url);
-	-webkit-mask-size: var(--moon-icon-size);
-	-webkit-mask-repeat: none;
-}
-.wrapper_f90abb:hover .childWrapper_f90abb::before {
->>>>>>> cb535db (fix)
 	/* prettier-ignore */
 	transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
 	transform: rotate(0deg) scale(1);

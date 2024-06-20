@@ -67,7 +67,7 @@
 	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
 
         /* color of popout menus like right-clicking messages */
-        --popout-bg: hsl(220 15% 10% / 0.9);
+        --popout-bg: hsl(220 15% 10% / 0.85);
         /* color of the inner part of unthemed profile popouts */
         --popout-bg-2: hsl(220 15% 8% / 0.6);
         /* transparent highlight for headers */
