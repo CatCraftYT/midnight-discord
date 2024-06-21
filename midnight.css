@@ -639,7 +639,7 @@ button.button_dd4f85 /* small buttons */,
 	background-color: var(--idle-indicator) !important;
 }
 
-.wrapper_a6f950:hover .childWrapper__760c6::before {
+.wrapper_f90abb:hover .childWrapper_f90abb::before {
 	/* prettier-ignore */
 	transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
 	transform: rotate(0deg) scale(1);
@@ -758,7 +758,7 @@ button.button_f67531 /* make user panel buttons round */ {
 }
 .newMessagesBar_cf58b5::before {
 	content: '';
-	background: var(--brand-experiment);
+	background: var(--accent-3);
 	box-shadow: var(--elevation-low);
 	width: 100%;
 	position: absolute;
