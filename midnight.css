@@ -23,13 +23,12 @@
 .channelHeader_f3978e /* inbox channel header */,
 .header_e664f3 /* threads menu header */,
 .footer_ac90a2 /* pinned messages footer */,
-.profileBadges_f89da9 /* profile badges background */, 
-.note_c90ad7 textarea:focus /* profile notes focused */ {
+.profileBadges_f89da9 /* profile badges background */, {
         background: var(--popout-bg-3);
 }
 /* use before element to prevent submenus like reactions becoming positioned incorrectly https://stackoverflow.com/q/52937708 */
 .menu_d90b3d:not(#account)::before /* right-click menus but not status switcher */,
-.userProfileInnerThemedNonPremium_c69a7b::before /* profile popout, need to do this so status and acc switcher are correctly positioned */
+.biteSizeInnerThemed_c69a7b::before /* profile popout, need to do this so status and acc switcher are correctly positioned */
 {
         content: "";
         backdrop-filter: blur(5px);
@@ -39,12 +38,12 @@
         position: absolute;
 }
 .overlayBackground_c69a7b /* inner part of profile popouts */,
-.container_cfbfb9 /* server activity hover inner */,
-.messageGroupWrapper_ac90a2 /* pinned messages */ {
+.messageGroupWrapper_ac90a2 /* pinned messages */,
+.inner_dc0b43 /* dm bar in profile popout */,
+.activity_cd74cc /* activity in profile popout */ {
         background: var(--popout-bg-2) !important;
 }
-.userProfileOuterUnthemed_c69a7b /* redundant background part of profile popouts */,
-.userProfileInnerThemedNonPremium_c69a7b /* original profile popout bg */,
+.biteSizeInnerThemed_c69a7b /* original profile popout bg */,
 .emojiPicker_c6ee36 /* redundant bg of reaction emoji picker */,
 #emoji-picker-tab-panel>.header_c6ee36 /* reaction emoji picker header */,
 .wrapper_e06857 /* emoji picker headers */,
@@ -52,11 +51,16 @@
 .guildSection_e58351 /* seemingly redundant bottom half of emoji guild popout */,
 .wrapper_ba23fe /* emoji picker server list */,
 .inspector_c3120f /* emoji picker footer */,
-.header_b56bbc /* gif search bar bg */,
-.categoryItemDefaultCategorySelected_dfa278 /* background of selected emoji category */ {
-        background: none;
+.searchBar_c6ee36 /* emoji search bar bg */,
+.categoryItemDefaultCategorySelected_dfa278 /* background of selected emoji category */,
+.header_b56bbc /* gif panel header */,
+.searchBar_b56bbc /* gif search bar background */,
+.searchBar_c6ee36 /* emoji search bar background */,
+.container_b56bbc /* gif picker background */ {
+        background: none !important;
 }
-.emojiPicker_c6ee36 /* remove inner box shadow around reaction emoji picker selection */ {
+.emojiPicker_c6ee36 /* remove inner box shadow around reaction emoji picker selection */,
+.header_c6ee36 /* remove emoji picker shadow */ {
         box-shadow: none !important;
 }
 #emoji-picker-tab-panel[role="dialog"] /* add box shadow around entire reaction emoji picker */ {
