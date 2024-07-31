@@ -15,7 +15,7 @@
 .container_be6a5c /* server activity hover */,
 .tooltipPrimary_b6c360 /* emoji/folder hover */,
 .root_f9a4c9:not(.carouselModal_d2b9a1) /* focused popups (like channel info popup) but not image popups */ {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(10px);
         background: var(--popout-bg) !important;
 }
 .header_b0286e /* message search box header */,
@@ -31,7 +31,7 @@
 .biteSizeInnerThemed_c69a7b::before /* profile popout, need to do this so status and acc switcher are correctly positioned */
 {
         content: "";
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
         background: var(--popout-bg) !important;
         width: 100%;
         height: 100%;
@@ -44,6 +44,7 @@
         background: var(--popout-bg-2) !important;
 }
 .biteSizeInnerThemed_c69a7b /* original profile popout bg */,
+.userProfileOuterUnthemed_c69a7b /* extra user bg for unthemed profiles */,
 .emojiPicker_c6ee36 /* redundant bg of reaction emoji picker */,
 #emoji-picker-tab-panel>.header_c6ee36 /* reaction emoji picker header */,
 .wrapper_e06857 /* emoji picker headers */,
