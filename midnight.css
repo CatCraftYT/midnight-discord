@@ -45,6 +45,7 @@
 :not(.custom-profile-theme) > .inner_c0bea0.biteSize_c0bea0 /* original profile popout bg (preserve custom profiles) */,
 .outer_c0bea0.biteSize_c0bea0:not(.custom-profile-theme) /* extra profile popout bg */,
 #emoji-picker-tab-panel>.header_c0e32c /* reaction emoji picker header */,
+.emojiPicker_c0e32c /* redundant reaction emoji picker bg */,
 .wrapper__14245 /* emoji picker headers */,
 .menu_c1e9c4 /* original right-click menu background */,
 .guildSection_d5cd2d /* seemingly redundant bottom half of emoji guild popout */,
